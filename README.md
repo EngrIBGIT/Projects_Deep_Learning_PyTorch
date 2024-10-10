@@ -45,11 +45,14 @@ The repository includes easy-to-follow instructions and exercises to get you sta
 ## Getting Started
 
 ### Installing PyTorch
+
 Install PyTorch by running:
 `pip install torch torchvision `
 
 ## Setting up the Environment
+
 It's recommended to use a virtual environment to manage dependencies for this project:
+
       `I am using` [Google Colab](https://colab.research.google.com)
 
 # Create a virtual environment
@@ -63,22 +66,29 @@ It's recommended to use a virtual environment to manage dependencies for this pr
 `source pytorch_env/bin/activate`
 
 # Install required dependencies
+
 `pip install -r requirements.txt`
 
 
 
 ## Learning PyTorch Fundamentals
+
 Tensors in PyTorch
-Tensors are the core building blocks of PyTorch models. They are multi-dimensional arrays, similar to NumPy arrays.
+
+Tensors are the core building blocks of PyTorch models. 
+
+They are multi-dimensional arrays, similar to NumPy arrays.
 
 `import torch`
 
 # Create a simple tensor
+
 `x = torch.tensor([[1, 2], [3, 4]])
 print(x)`
 
 
 ## Autograd in PyTorch
+
 Autograd allows automatic differentiation of tensor operations. This is crucial for training neural networks.
 
 `x = torch.tensor(1.0, requires_grad=True)
@@ -92,8 +102,12 @@ I am using` [Google Colab](https://colab.research.google.com)
 PyTorch uses modules (torch.nn.Module) to represent models, enabling the creation of complex architectures like neural networks.
 
 ### Deep Learning Concepts
-Neural Networks Basics
-A Neural Network consists of multiple layers that process data to make predictions. PyTorch allows for easy building of such networks using torch.nn.Module.
+
+**Neural Networks Basics**
+
+A Neural Network consists of multiple layers that process data to make predictions. 
+
+PyTorch allows for easy building of such networks using torch.nn.Module.
 
 `import torch.nn as nn
 
@@ -107,18 +121,28 @@ class SimpleNN(nn.Module):
 
 
 ## Artificial Neural Networks (ANN)
-Artificial Neural Networks are the foundation of deep learning. Here you will:
+Artificial Neural Networks are the foundation of deep learning. 
+
+*Learning:* [Deep Learning with PyTorch Notebook](https://github.com/EngrIBGIT/Projects_Deep_Learning_PyTorch/blob/main/Deep_Learning_Pytorch.ipynb)
+
 
 Build basic ANN models in PyTorch.
+
 Train models using gradient descent.
+
 Fine-tune parameters for improved performance.
 
 
 ## Convolutional Neural Networks (CNN)
-Convolutional Neural Networks are designed for image processing tasks. You will learn:
+Convolutional Neural Networks are designed for image processing tasks. 
+
+*Learning:*[Convolutional Neural Network PyTorch Notebook](https://github.com/EngrIBGIT/Projects_Deep_Learning_PyTorch/blob/main/Convolusional_Neural_Network_Pytorch.ipynb)
+
 
 How to build CNN layers with torch.nn.Conv2d.
+
 Using pooling layers to reduce dimensionality.
+
 Training CNNs on datasets like CIFAR-10.
 
 `class SimpleCNN(nn.Module):
@@ -131,27 +155,46 @@ Training CNNs on datasets like CIFAR-10.
         x = self.pool(torch.relu(self.conv1(x)))
         return x`
 
+Project Link:
+
+[Deep Learning with PyTorch Notebook](https://github.com/EngrIBGIT/Projects_Deep_Learning_PyTorch/blob/main/Deep_Learning_Pytorch.ipynb)
+
+[Convolutional Neural Network PyTorch Notebook](https://github.com/EngrIBGIT/Projects_Deep_Learning_PyTorch/blob/main/Convolusional_Neural_Network_Pytorch.ipynb)
+
+[Deep Learning with PyTorch Project](https://github.com/EngrIBGIT/Projects_Deep_Learning_PyTorch/blob/main/Project_Deep_Learning_PyTorch.ipynb)
+
+
 
 ## Project Structure
 The repository is structured as follows:
 
 `
 ├── data/                   # Folder for datasets
-├── notebooks/              # Jupyter notebooks for tutorials and experiments
+
+├── notebooks/              # Jupyter notebooks 
+
+for tutorials and experiments
 ├── models/                 # Pretrained models and architecture files
+
 ├── src/                    # Source code for neural network models and utilities
+
 ├── requirements.txt        # List of dependencies
+
 ├── README.md               # Documentation file (this file)
-└── LICENSE                 # License for the repository`
+
 
 
 ## Contributing
 I welcome contributions to improve this repository! If you'd like to contribute:
 
 - Fork this repository.
+
 - Create a new branch (git checkout -b feature-branch).
+
 - Commit your changes (git commit -am 'Add some feature').
+
 - Push the branch (git push origin feature-branch).
+
 - Create a new Pull Request.
 
 `**Thank you for exploring Deep Learning with PyTorch! We hope this repository helps you on your journey to mastering deep learning and PyTorch.**`
