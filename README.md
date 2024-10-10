@@ -2,7 +2,9 @@
 
 ## Deep Learning with PyTorch
 
-Welcome to my **Deep Learning with PyTorch** repository! This project serves as a comprehensive guide my PyTorch learning , starting from the basics and advancing to topics like Neural Networks, Artificial Neural Networks (ANN), and Convolutional Neural Networks (CNN). This repository is designed as a help toyou master PyTorch and its powerful applications.
+Welcome to my **Deep Learning with PyTorch** repository! This project serves as a comprehensive guide to my PyTorch learning , starting from the basics and advancing to topics like Neural Networks, Artificial Neural Networks (ANN), and Convolutional Neural Networks (CNN). 
+
+This repository is designed as a help to master PyTorch and its powerful applications.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -47,6 +49,7 @@ The repository includes easy-to-follow instructions and exercises to get you sta
 ### Installing PyTorch
 
 Install PyTorch by running:
+
 `pip install torch torchvision `
 
 ## Setting up the Environment
@@ -56,13 +59,17 @@ It's recommended to use a virtual environment to manage dependencies for this pr
       `I am using` [Google Colab](https://colab.research.google.com)
 
 # Create a virtual environment
+
 `python -m venv pytorch_env`
 
 
 # Activate the virtual environment
 # On Windows:
+
 `pytorch_env\Scripts\activate`
+
 # On MacOS/Linux:
+
 `source pytorch_env/bin/activate`
 
 # Install required dependencies
@@ -109,9 +116,9 @@ A Neural Network consists of multiple layers that process data to make predictio
 
 PyTorch allows for easy building of such networks using torch.nn.Module.
 
-`import torch.nn as nn
+`import torch.nn as nn`
 
-class SimpleNN(nn.Module):
+`class SimpleNN(nn.Module):
     def __init__(self):
         super(SimpleNN, self).__init__()
         self.fc1 = nn.Linear(2, 3)  # Fully connected layer
@@ -121,6 +128,7 @@ class SimpleNN(nn.Module):
 
 
 ## Artificial Neural Networks (ANN)
+
 Artificial Neural Networks are the foundation of deep learning. 
 
 *Learning:* [Deep Learning with PyTorch Notebook](https://github.com/EngrIBGIT/Projects_Deep_Learning_PyTorch/blob/main/Deep_Learning_Pytorch.ipynb)
@@ -134,6 +142,7 @@ Fine-tune parameters for improved performance.
 
 
 ## Convolutional Neural Networks (CNN)
+
 Convolutional Neural Networks are designed for image processing tasks. 
 
 *Learning:*[Convolutional Neural Network PyTorch Notebook](https://github.com/EngrIBGIT/Projects_Deep_Learning_PyTorch/blob/main/Convolusional_Neural_Network_Pytorch.ipynb)
@@ -180,11 +189,12 @@ for tutorials and experiments
 
 ├── requirements.txt        # List of dependencies
 
-├── README.md               # Documentation file (this file)
+├── README.md               # Documentation file (this file)`
 
 
 
 ## Contributing
+
 I welcome contributions to improve this repository! If you'd like to contribute:
 
 - Fork this repository.
@@ -197,4 +207,4 @@ I welcome contributions to improve this repository! If you'd like to contribute:
 
 - Create a new Pull Request.
 
-`**Thank you for exploring Deep Learning with PyTorch! We hope this repository helps you on your journey to mastering deep learning and PyTorch.**`
+`**Thank you for exploring my Deep Learning with PyTorch! I hope this repository helps with some deep learning and PyTorch.**`
